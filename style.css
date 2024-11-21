@@ -1,0 +1,147 @@
+/* Reseta as margens e padding de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Garantir que o body ocupe 100% da altura da tela */
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #1A91A1;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+header .logo {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #1A91A1;
+    color: #f7f7f7;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    /* Coloca o footer no fim */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contêiner dos links de GitHub */
+.github-links {
+    display: flex;
+    justify-content: center;
+    /* Alinha os links no centro */
+    gap: 20px;
+    /* Espaçamento entre os links */
+}
+
+/* Estilos para os links */
+.github-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.github-links a i {
+    margin-right: 8px;
+}
+
+.github-links a:hover {
+    text-decoration: underline;
+}
+
+/* Contêiner do mapa e legenda */
+.map-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 1200px;
+    gap: 20px;
+    position: relative;
+}
+
+/* Estilo do mapa */
+#map {
+    width: 500px;
+    height: 500px;
+    border-radius: 8px;
+    border: 3px solid #2980b9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo da legenda */
+.legend {
+    width: auto;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Imagem da legenda */
+.legend img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* Estilos para responsividade */
+@media (max-width: 768px) {
+    .map-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #map {
+        width: 100%;
+        height: 300px;
+    }
+
+    .legend {
+        width: 90%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
