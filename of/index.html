@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos de Desmatamento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../img/geo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../img/geo.png" alt="Logo" class="logo" id="logo">
+            <div class="dropdown-menu" id="dropdown-menu">
+                <ul>
+                    <li><a href="https://terrabrasilis.dpi.inpe.br/app/dashboard/fires/biomes/aggregated/#">Análise</a>
+                    </li>
+                    <li><a href="https://terrabrasilis.dpi.inpe.br/ams/">Sala de Situação</a></li>
+                    <li><a
+                            href="https://ipam.org.br/cartilhas-ipam/foconofogo/#:~:text=O%20fogo%20está%20intimamente%20ligado,no%20entanto%2C%20essa%20realidade%20mudou.">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="chart-container">
+            <canvas id="chart1" width="400" height="200"></canvas>
+            <br><br><br>
+            <canvas id="chart2" width="400" height="200"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <div class="github-links">
+            <a href="https://github.com/graxyzr">
+                <i class="fa-brands fa-github"></i>
+                Greice Pereira
+            </a>
+            <a href="https://github.com/xphzin-dzn">
+                <i class="fa-brands fa-github"></i>
+                Pedro Henrique
+            </a>
+            <a href="https://github.com/Prietsch">
+                <i class="fa-brands fa-github"></i>
+                Rafaela Prietsch
+            </a>
+            <a href="https://github.com/MauroRosa">
+                <i class="fa-brands fa-github"></i>
+                Mauro Rosa
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
